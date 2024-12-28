@@ -1,101 +1,235 @@
-import Image from "next/image";
+import Navbar3 from "@/components/navbar";
+import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+    <div>
+      <Navbar3 />
+      <main>
+        <section className="relative">
+          <img
+            src="https://storage.googleapis.com/a1aa/image/KKFSpybD2PIefUecobNEd2QpY6HI4sefgVqfLgKWUZW0lhMeJA.jpg"
+            alt="Background image of Link cozy room with plants and shelves"
+            className="w-full h-64 object-cover"
+            width="1920"
+            height="400"
+          />
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 sm:px-8 md:px-12">
+            <h1 className="text-4xl font-bold">Home</h1>
+            <p className="text-lg">Home &gt; Home</p>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+      <div className="px-4 sm:px-8 md:px-12">
+        <h1 className="mt-5 font-extrabold text-4xl text-center bg-amber-100">What is Blog?</h1>
+        <p className="text-2xl mt-5 bg-amber-50 p-4 sm:p-6 md:p-8">
+          A blog is a regularly updated website or web page where individuals or organizations share content in the form of posts. Blogs are typically informal and cover a wide range of topics such as personal experiences, opinions, advice, tutorials, news, or niche subjects like technology, fashion, travel, food, or business.
+        </p>
+        <h1 className="font-semibold text-4xl mt-5 text-center bg-amber-100">Key Characteristics of Blog</h1>
+        <div className="mt-5 text-2xl">
+          <ol>
+            <div className="mb-5 bg-amber-50 p-4 sm:p-6 md:p-8">
+              <li>
+                <h1 className="font-semibold">Content Focus:</h1>
+                <p>Posts are usually centered around a specific theme or topic.</p>
+              </li>
+              <li>
+                <h1 className="font-semibold">Reverse Chronological Order:</h1>
+                <p>Most recent posts appear first.</p>
+              </li>
+              <li>
+                <h1 className="font-semibold">Personal or Professional:</h1>
+                <p>Blogs can be personal (like an online diary) or professional (used for branding, marketing, or thought leadership).</p>
+              </li>
+              <li>
+                <h1 className="font-semibold">Interactive:</h1>
+                <p>Readers can often leave comments or engage with the content, making it a two-way communication platform.</p>
+              </li>
+              <li>
+                <h1 className="font-semibold">Visual Elements:</h1>
+                <p>Blogs often include images, videos, infographics, and other media to make the content engaging.</p>
+              </li>
+            </div>
+          </ol>
+        </div>
+
+        <h1 className="font-semibold text-4xl mt-5 text-center bg-amber-100">Types of Blog</h1>
+        <div className="mt-5 text-2xl">
+          <ul>
+            <div className="mb-5 bg-amber-50 p-4 sm:p-6 md:p-8">
+              <li>
+                <h1 className="font-semibold">Personal Blogs:</h1>
+                <p>Focused on the blogger's personal life or interests.</p>
+              </li>
+
+              <li>
+                <h1 className="font-semibold">Business Blogs:</h1>
+                <p>Used by companies to promote their products or services and provide value to their audience.</p>
+              </li>
+
+              <li>
+                <h1 className="font-semibold">Niche Blogs:</h1>
+                <p>Focus on specific topics, such as fitness, photography, or parenting.</p>
+              </li>
+
+              <li>
+                <h1 className="font-semibold">News Blogs:</h1>
+                <p>Cover current events and updates in various industries.</p>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <h1 className="font-semibold text-4xl mt-5 text-center bg-amber-100">Purpose of Blogging</h1>
+
+        <div className="mt-5 text-2xl">
+          <ul>
+            <div className="mb-5 bg-amber-50 p-4 sm:p-6 md:p-8">
+              <li>
+                <p>Share knowledge or expertise.</p>
+              </li>
+
+              <li>
+                <p>Build an online presence or personal brand.</p>
+              </li>
+
+              <li>
+                <p>Connect with like-minded individuals or communities.</p>
+              </li>
+
+              <li>
+                <p>Drive traffic to a website for business or monetization.</p>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <div className="text-center mt-5">
+          <h2 className="font-semibold text-4xl bg-amber-100">See our blogs by clicking below</h2>
+          <Link href="/blog">
+            <button className="bg-amber-50 font-semibold text-2xl mt-5 p-3 sm:p-4 md:p-5 mx-auto block">
+              Click Here
+            </button>
+          </Link>
+        </div>
+      </div>
+
+      <Footer />
     </div>
   );
 }
+
+// import Navbar3 from "@/components/navbar";
+// import Footer from "@/components/Footer";
+// import Link from "next/link";
+
+// export default function Home() {
+//   return (
+//     <div>
+//       <Navbar3/>
+//       <main>
+//         <section className="relative">
+//           <img
+//             src="https://storage.googleapis.com/a1aa/image/KKFSpybD2PIefUecobNEd2QpY6HI4sefgVqfLgKWUZW0lhMeJA.jpg"
+//             alt="Background image of Link cozy room with plants and shelves"
+//             className="w-full h-64 object-cover"
+//             width="1920"
+//             height="400"
+//           />
+//           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
+//             <h1 className="text-4xl font-bold">Home</h1>
+//             <p className="text-lg">Home &gt; Home</p>
+//           </div>
+//         </section>
+//         </main>
+//         <div>
+//         <h1 className="mt-5 font-extrabold text-4xl text-center bg-amber-100">What is Blog?</h1>
+//         <p className="text-2xl mt-5 ml-8 mr-8 bg-amber-50">A blog is a regularly updated website or web page where individuals or organizations share content in the form of posts. Blogs are typically informal and cover a wide range of topics such as personal experiences, opinions, advice, tutorials, news, or niche subjects like technology, fashion, travel, food, or business.</p>
+//         <h1 className="font-semibold text-4xl mt-5 text-center bg-amber-100">Key Characteristics of Blog</h1>
+//         <div className="mt-5 text-2xl ml-8 mr-8">
+//         <ol>
+//           <div className="mb-5 bg-amber-50">
+//           <li>
+//             <h1 className="font-semibold" >Content Focus:</h1><p>Posts are usually centered around a specific theme or topic.</p>
+//           </li>
+//           <li>
+//             <h1 className="font-semibold" >Reverse Chronological Order:</h1><p>Most recent posts appear first.</p>
+//           </li>
+//           <li>
+//             <h1 className="font-semibold" >Personal or Professional:</h1><p>Blogs can be personal (like an online diary) or professional (used for branding, marketing, or thought leadership)..</p>
+//           </li>
+//           <li>
+//             <h1 className="font-semibold" >Interactive:</h1><p> Readers can often leave comments or engage with the content, making it a two-way communication platform.</p>
+//           </li>
+//           <li>
+//             <h1 className="font-semibold" >Visual Elements:</h1><p>Blogs often include images, videos, infographics, and other media to make the content engaging.</p>
+//           </li>
+//           </div>
+//         </ol>
+//         </div>
+
+//         <h1 className="font-semibold text-4xl mt-5 text-center bg-amber-100">Types of Blog</h1>
+//         <div className="mt-5 text-2xl ml-8 mr-8">
+//           <ul>
+//             <div className="mb-5 bg-amber-50">
+//             <li>
+//               <h1 className="font-semibold">Personal Blogs:</h1><p>Focused on the blogger's personal life or interests.</p>
+//             </li>
+
+//             <li>
+//               <h1 className="font-semibold">Business Blogs:</h1><p>Used by companies to promote their products or services and provide value to their audience.</p>
+//             </li>
+
+//             <li>
+//               <h1 className="font-semibold">Niche Blogs:</h1><p>Focus on specific topics, such as fitness, photography, or parenting.</p>
+//             </li>
+
+//             <li>
+//               <h1 className="font-semibold">News Blogs:</h1><p>Cover current events and updates in various industries.</p>
+//             </li>
+//             </div>
+//           </ul>
+//           </div>
+
+//           <h1 className="font-semibold text-4xl mt-5 text-center bg-amber-100">Purpose of Blogging</h1>
+
+//           <div className="mt-5 text-2xl ml-8 mr-8">
+//             <ul>
+//               <div className="mb-5 bg-amber-50">
+//                 <li>
+//                   <p>Share knowledge or expertise.</p>
+//                 </li>
+
+//                 <li>
+//                   <p>Build an online presence or personal brand.</p>
+//                 </li>
+
+//                 <li>
+//                   <p>Connect with like-minded individuals or communities.</p>
+//                 </li>
+
+//                 <li>
+//                   <p>Drive traffic to a website for business or monetization.</p>
+//                 </li>
+
+//               </div>
+//             </ul>
+//           </div>
+
+//           <div>
+//             <h2 className="font-semibold text-4xl mt-5 text-center bg-amber-100">See our blogs by clicking below</h2>
+//             <Link href="/blog"><button className="bg-amber-50 font-semibold text-2xl mt-5 text-center ml-[700px] mb-5">
+//               Click Here
+//             </button>
+//             </Link>
+//             </div>
+
+//           <Footer/>
+
+
+//         </div>
+//     </div>
+//   );
+// }
